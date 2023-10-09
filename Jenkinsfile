@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Docker Build') {
             steps {
-                sh 'cd devops-projects && sudo docker build -t anu-devops:latest .'
+                #sh 'cd devops-projects && sudo docker build -t anu-devops:latest .'
+                sh 'ls -a'
             }
         }
         stage('Deploy') {
