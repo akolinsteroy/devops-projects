@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Docker Build') {
             steps {
-               sh 'docker build -t anu-devops:latest -f Dockerfile .'
+               sh 'sudo docker build -t anu-devops:latest -f Dockerfile .'
             }
         }
         stage('Deploy') {
            steps {
-               sh 'docker run anu-devops .'
+               sh 'sudo docker run anu-devops .'
             }
         }
     }
