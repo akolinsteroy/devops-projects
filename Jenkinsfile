@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') {
            steps {
-               sh 'sudo docker run anu-devops .'
+               sh 'sudo docker run anu-devops'
             }
         }
     }
